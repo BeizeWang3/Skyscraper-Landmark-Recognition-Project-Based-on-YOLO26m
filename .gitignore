@@ -14,9 +14,6 @@ env/
 .vscode/
 .idea/
 
-# YOLO runs - very important to ignore this!
-# runs/
-
 # Large data files - if you don't want to upload them
 raw_data/
 ultralytics/

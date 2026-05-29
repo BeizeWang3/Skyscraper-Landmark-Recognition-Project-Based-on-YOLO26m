@@ -181,6 +181,10 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 ```
 project/
 │
+├── augmented_grayscale/  # 灰度变换后的图像
+├── augmented_hist_equalized/ # 直方图均衡化后的图像
+├── augmented_sharpened/  # 图像锐化后的图像
+│
 ├── pre_train_data/        # 初始小规模数据集（250张原图）
 │   ├── images/            # 图像
 │   │   ├── train/         # 训练集图像
@@ -206,9 +210,9 @@ project/
 ├── predict_data/          # 存放待预测的图像数据
 │
 ├── runs/                  # YOLO26 训练和预测的输出
-│   ├── detect/            # 训练和预测结果
-│   │   ├── train-XX/      # 训练结果目录
-│   │   └── predict-XX/    # 预测结果目录
+│   └── detect/            # 训练和预测结果
+│       ├── train-XX/      # 训练结果目录
+│       └── predict-XX/    # 预测结果目录
 │
 ├── train.py               # 模型训练脚本
 ├── predict.py             # 模型预测脚本
