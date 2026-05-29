@@ -181,7 +181,16 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 ```
 project/
 │
-├── raw_data/              # 存放原始数据 
+├── pre_train_data/        # 初始小规模数据集（250张原图）
+│   ├── images/            # 图像
+│   │   ├── train/         # 训练集图像
+│   │   ├── val/           # 验证集图像
+│   │   └── test/          # 测试集图像
+│   ├── labels/            # 标签
+│   │   ├── train/         # 训练集标签
+│   │   ├── val/           # 验证集标签
+│   │   └── test/          # 测试集标签
+│   └── pre_train_data.yaml# 数据集配置文件
 │
 ├── data/                  # 存放符合YOLO格式的最终数据集
 │   ├── images/            # 图像
@@ -193,6 +202,8 @@ project/
 │   │   ├── val/           # 验证集标签
 │   │   └── test/          # 测试集标签
 │   └── data.yaml          # 数据集配置文件
+│
+├── predict_data/          # 存放待预测的图像数据
 │
 ├── runs/                  # YOLO26 训练和预测的输出
 │   ├── detect/            # 训练和预测结果
@@ -206,6 +217,9 @@ project/
 ├── enhance_images.py      # 预处理：数据增强
 ├── create_pseudo_labels.py# 预处理：生成伪标签
 ├── split_dataset.py       # 预处理：划分数据集
+│
+├── yolo26n.pt             # 预训练的YOLO26n模型权重 
+├── yolo26m.pt             # 预训练的YOLO26m模型权重 
 │
 └── README.md              # 本文档
 ```
