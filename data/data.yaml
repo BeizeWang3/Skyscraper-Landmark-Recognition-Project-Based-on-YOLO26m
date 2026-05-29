@@ -1,0 +1,11 @@
+names:
+- Eiffel_Tower
+- N_Seoul_Tower
+- Oriental_Pearl_TV_Tower
+- Canton_Tower
+- Tokyo_Skytree
+nc: 5
+path: E:/DIP/MyLab/project/data
+test: images/test
+train: images/train
+val: images/val

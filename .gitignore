@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# IDE/Editor specific
+.vscode/
+.idea/
+
+# YOLO runs - very important to ignore this!
+runs/
+
+# Large data files - if you don't want to upload them
+raw_data/
+ultralytics/
+# predict_data/
+# *.pt
+
+# OS specific
+.DS_Store
+Thumbs.db
